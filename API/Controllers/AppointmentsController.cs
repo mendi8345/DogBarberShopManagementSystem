@@ -20,11 +20,6 @@ public class AppointmentsController : ControllerBase
     public async Task<IActionResult> Create([FromBody] AppointmentCreateDto appointmentDto)
     {
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
             var createdAppointmentId = await _appointmentService.CreateAppointment(appointmentDto);
             return CreatedAtAction(nameof(GetById), new { id = createdAppointmentId });
         }
