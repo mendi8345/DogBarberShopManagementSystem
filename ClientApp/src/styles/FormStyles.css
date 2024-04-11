@@ -1,0 +1,45 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Make it at least as tall as the viewport */
+  padding: 20px;
+  background-color: #f0f2f5; /* A light background color */
+}
+
+.form-content {
+  width: 100%;
+  max-width: 400px; /* Maximum width of the form */
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better depth */
+}
+
+/* Additional styles for inputs and buttons for a better look */
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Space out elements */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-content .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Space out elements */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    .form-content .form-button:hover {
+        background-color: #0056b3;
+    }
