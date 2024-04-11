@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 
 namespace DogBarberShopManagementSystem.Application.Services
 {
-
-
     public class AppointmentService : IAppointmentService
     {
         private readonly IAppointmentRepository _appointmentRepository;
