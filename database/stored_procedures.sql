@@ -1,4 +1,6 @@
-﻿CREATE OR ALTER PROCEDURE [dbo].[spLoginUser]
+﻿
+
+CREATE OR ALTER PROCEDURE [dbo].[spLoginUser]
     @Username NVARCHAR(50),
     @Password NVARCHAR(256) -- This should be a hashed password
 AS
@@ -68,7 +70,7 @@ BEGIN
 END
 GO
 
-CREATE OR ALTER PROCEDURE [dbo].[GetAppointmentsWithUserNames]
+CREATE OR ALTER PROCEDURE [dbo].[GetAppointments]
 AS
 BEGIN
     SELECT a.Id, a.UserId, u.Username, a.ArrivalTime, a.AppointmentCreated
